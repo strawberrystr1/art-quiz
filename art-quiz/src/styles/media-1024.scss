@@ -1,0 +1,289 @@
+@media screen and (min-width: 1024px) {
+    .application {
+        & .app-wrapper {
+            max-width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+        }
+    }
+
+    .main {
+        max-width: 1440px;
+        margin: 0 auto;
+
+        & .main-wrapper {
+            align-items: center;
+
+            &.settings-wrapper-main {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .main-logo {
+        height: 150px;
+        background-size: contain;
+    }
+
+    .main-buttons-wrap a {
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .game-header {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .nav-btn svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer {
+        height: 7vh;
+    }
+
+    .main {
+        height: 81vh;
+    }
+
+    .header {
+        & .header-wrapper {
+            & .nav-container {
+                width: 60%;
+                justify-content: space-evenly;
+
+                & a {
+                    width: 180px;
+
+                    & p {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .categories-block {
+
+        & .categories-block-inner {
+
+
+            & .categories-card {
+                height: 260px;
+
+                & img {
+                    max-width: 290px;
+                    width: 290px;
+                    height: 230px;
+                    max-height: 230px;
+                }
+
+                & .categories-popup img {
+                    max-width: 30px;
+                    max-height: 30px;
+                    width: 30px;
+                    height: 30px;
+                }
+
+                & .card-text {
+                    font-size: 24px;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+
+    .game-block {
+        & .questions-block {
+            row-gap: 10px;
+            width: 100%;
+            height: 70%;
+            justify-content: space-around;
+
+            &.artists {
+                border: none;
+                height: 100%;
+            }
+
+            &.pictures,
+            &.blitz {
+                justify-content: center;
+                align-items: center;
+            }
+
+            & img.artist {
+                max-width: 350px;
+                max-height: 320px;
+            }
+
+            & img.pictures {
+                width: 560px;
+                height: 90%;
+                border-radius: 20px;
+                border: 2px solid green;
+            }
+        }
+
+        & .answers-block {
+            width: 70%;
+            row-gap: 15px;
+
+            & button {
+                height: 60px;
+
+                &:hover {
+                    background-position: 0;
+                    color: black;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .game-header {
+        width: 40%;
+
+        .progress-bar {
+            width: 90%;
+        }
+    }
+
+    .popup-overlay {
+        width: 70%;
+        left: 15%;
+        margin: 0 auto;
+
+        &.hide {
+            left: -2000px;
+        }
+
+        & .popup {
+            width: 50%;
+            height: 80%;
+            & .popup-pic {
+                width: 80%;
+                height: 70%;
+            }
+
+            & .finish-grand {
+                border: none;
+                width: 60%;
+                height: 50%;
+
+                &.grand {
+                    height: 30%;
+                }
+            }
+
+            & .popup-text-block {
+                color: #000;
+                width: 100%;
+                height: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                &.grand {
+                    justify-content: space-evenly;
+                    height: 250px;
+                }
+
+                & .name {
+                    font-size: 30px;
+                    text-align: center;
+                    font-weight: bold;
+
+                    &.finish-success {
+                        font-size: 36px;
+                    }
+
+                    &.finish-grand-name {
+                        font-size: 64px;
+                        font-weight: bold;
+                    }
+                }
+
+                & .author {
+                    font-size: 26px;
+                    font-style: italic;
+
+                    &.finish-success {
+                        font-size: 44px;
+                    }
+
+                    &.finish-grand-author {
+                        font-size: 38px;
+                    }
+                }
+            }
+
+            & .next-btn {
+                width: 40%;
+            }
+
+            & .marker {
+                left: 12%;
+            }
+
+            & .finish-popup-btns {
+                width: 60%;
+            }
+        }
+    }
+
+    .score-block {
+        & .score-block-inner {
+            justify-content: space-evenly;
+            gap: 30px;
+
+            & .placeholder-card {
+                width: 330px;
+                height: 280px;
+            }
+
+            & .score-card {
+                width: 330px;
+                height: 280px;
+            }
+        }
+    }
+
+    .footer-wrapper {
+
+        & .school {
+            width: 100px;
+            height: 43px;
+        }
+
+        & .developer {
+            font-size: 36px;
+        }
+
+        & .year {
+            font-size: 54px;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .game-block {
+        & .questions-block {
+            row-gap: 10px;
+            width: 70%;
+            height: 70%;
+            justify-content: space-around;
+
+            & img.artist {
+                width: 380px;
+            }
+        }
+
+        & .answers-block {
+            width: 50%;
+        }
+    }
+}

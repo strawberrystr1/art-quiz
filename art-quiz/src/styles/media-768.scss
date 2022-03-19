@@ -1,0 +1,219 @@
+@media screen and (min-width: 768px) {
+
+    .header {
+        height: 12vh;
+        & .header-logo {
+            max-width: 120px;
+        }
+    }
+
+    .main {
+        height: 78vh;
+    }
+
+    .application {
+        & .app-wrapper {
+            max-width: 760px;
+            height: 100vh;
+            margin: 0 auto;
+        }
+    }
+
+    .main {
+        & .main-wrapper {
+            justify-content: space-around;
+        }
+    }
+
+    .main-buttons-wrap {
+        width: 60%;
+    }
+
+    .choose-language {
+        display: flex;
+        width: 80%;
+        height: 70px;
+    
+        & div {
+            font-size: 30px;
+
+            & .radio:not(checked)+label {
+                padding: 0 0 0 45px;
+            }
+    
+            & .radio:not(checked)+label:before {
+                width: 30px;
+                height: 30px;
+            }
+    
+            & .radio:not(checked)+label:after {
+                top: 3px;
+                left: 3px;
+                width: 26px;
+                height: 26px;
+            }
+        }
+    }
+
+    .game-block {
+        & .questions-block {
+            row-gap: 10px;
+            width: 100%;
+            height: 80%;
+            justify-content:space-around;
+    
+            &.artists {
+                border: none;
+                height: 100%;
+            }
+
+            &.pictures, &.blitz {
+                justify-content: center;
+                align-items: center;
+            }
+    
+            & img.artist {
+                max-width: 250px;
+                max-height: 250px;
+            }
+    
+            & img.pictures {
+                width: 660px;
+                height: 90%;
+                border-radius: 20px;
+                border: 2px solid green;
+            }
+        }
+    
+        & .answers-block {
+            width: 90%;
+            row-gap: 15px;
+    
+            & button {
+            }
+        }
+    }
+
+    .game-header {
+        .progress-bar {
+            width: 80%;
+        }
+    }
+
+    .categories-card {
+        & .categories-popup {
+            transform: translateY(100%);
+        }
+    }
+
+    .popup-overlay {
+    
+        & .popup {
+            width: 90%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+    
+            & .popup-pic {
+                width: 90%;
+                height: 70%;
+                border-radius: 40px;
+                border: 2px solid rgb(119, 233, 119);
+            }
+    
+            & .finish-grand {
+                border: none;
+                width: 60%;
+                height: 50%;
+    
+                &.grand {
+                    height: 30%;
+                }
+            }
+    
+            & .popup-text-block {
+                color: #000;
+                width: 100%;
+                height: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+    
+                &.grand {
+                    justify-content: space-evenly;
+                    height: 250px;
+                }
+    
+                & .name {
+                    font-size: 24px;
+                    text-align: center;
+    
+                    &.finish-success {
+                        font-size: 30px;
+                    }
+    
+                    &.finish-grand-name {
+                        font-size: 64px;
+                        font-weight: bold;
+                    }
+                }
+    
+                & .author {
+                    font-size: 20px;
+    
+                    &.finish-success {
+                        font-size: 38px;
+                    }
+    
+                    &.finish-grand-author {
+                        font-size: 32px;
+                    }
+                }
+            }
+    
+            & .next-btn {
+                width: 60%;
+            }
+    
+            & .marker {
+                left: 18%;
+                bottom: 33%;
+            }
+    
+            & .finish-popup-btns {
+                width: 70%;
+            }
+        }
+    }
+
+    .score-block {
+        & .score-block-inner {
+            justify-content:space-evenly;
+            gap: 30px;
+        }
+    }
+
+    .footer-wrapper {
+    
+        & .school {
+            width: 90px;
+            height: 43px;
+            background-image: url('../assets/icons/rs_school_js.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    
+        & .developer {
+            font-size: 26px;
+        }
+    
+        & .year {
+            color: #fff;
+            font-size: 34px;
+        }
+    }
+}
